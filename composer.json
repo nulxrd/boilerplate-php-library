@@ -50,8 +50,5 @@
         "test:coverage:ci": "phpunit --colors=always --coverage-text --coverage-xml build/coverage/coverage-xml tests",
         "test:coverage:html": "phpunit --colors=always --coverage-html build/coverage/coverage-html tests",
         "test:unit": "phpunit --testsuite units"
-    },
-    "require": {
-        "symfony/filesystem": "7.1.x-dev"
     }
 }
