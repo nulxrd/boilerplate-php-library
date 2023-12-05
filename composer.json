@@ -1,0 +1,57 @@
+{
+    "name": "nulldark/php-library-template",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dominik Szamburski",
+            "email": "dominikszamburski99@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "nulldark/devtools": "@dev",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Project\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vendor\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true,
+            "nulldark/devtools": true
+        }
+    },
+    "scripts": {
+        "checks": [
+            "@lint:fix",
+            "@lint:check",
+            "@analyze:psalm",
+            "@analyze:phpstan",
+            "@test:unit",
+            "@test:coverage:html"
+        ],
+        "lint:fix": "phpcbf --standard=phpcs.xml.dist",
+        "lint:check": "phpcs",
+        "analyze:md": "phpmd src/ xml phpmd.xml",
+        "analyze:phpstan": "phpstan analyze --ansi --memory-limit=1G",
+        "analyze:psalm": "psalm",
+        "build:clean": "git clean -fX build/.",
+        "build:clean:cache": "git clone -fX build/cache/.",
+        "build:clean:coverage": "git clone -fX build/coverage/.",
+        "test:coverage:ci": "phpunit --colors=always --coverage-text --coverage-xml build/coverage/coverage-xml tests",
+        "test:coverage:html": "phpunit --colors=always --coverage-html build/coverage/coverage-html tests",
+        "test:unit": "phpunit --testsuite units"
+    },
+    "require": {
+        "symfony/filesystem": "7.1.x-dev"
+    }
+}
