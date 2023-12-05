@@ -1,18 +1,18 @@
 {
     "name": "nulldark/php-library-template",
-    "type": "project",
     "license": "MIT",
+    "type": "project",
     "authors": [
         {
             "name": "Dominik Szamburski",
             "email": "dominikszamburski99@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require-dev": {
-        "nulldark/devtools": "@dev",
-        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "nulldark/devtools": "@dev"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Vendor\\Project\\": "src/"
@@ -26,11 +26,17 @@
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "phpstan/extension-installer": true,
-            "nulldark/devtools": true
+            "nulldark/devtools": true,
+            "phpstan/extension-installer": true
         }
     },
     "scripts": {
+        "analyze:md": "phpmd src/ xml phpmd.xml",
+        "analyze:phpstan": "phpstan analyze --ansi --memory-limit=1G",
+        "analyze:psalm": "psalm",
+        "build:clean": "git clean -fX build/.",
+        "build:clean:cache": "git clone -fX build/cache/.",
+        "build:clean:coverage": "git clone -fX build/coverage/.",
         "checks": [
             "@lint:fix",
             "@lint:check",
@@ -39,14 +45,8 @@
             "@test:unit",
             "@test:coverage:html"
         ],
-        "lint:fix": "phpcbf --standard=phpcs.xml.dist",
         "lint:check": "phpcs",
-        "analyze:md": "phpmd src/ xml phpmd.xml",
-        "analyze:phpstan": "phpstan analyze --ansi --memory-limit=1G",
-        "analyze:psalm": "psalm",
-        "build:clean": "git clean -fX build/.",
-        "build:clean:cache": "git clone -fX build/cache/.",
-        "build:clean:coverage": "git clone -fX build/coverage/.",
+        "lint:fix": "phpcbf --standard=phpcs.xml.dist",
         "test:coverage:ci": "phpunit --colors=always --coverage-text --coverage-xml build/coverage/coverage-xml tests",
         "test:coverage:html": "phpunit --colors=always --coverage-html build/coverage/coverage-html tests",
         "test:unit": "phpunit --testsuite units"
