@@ -3,6 +3,7 @@
 namespace Vendor\Tests\Unit;
 
 use Vendor\Project\Foo;
+use Vendor\Tests\TestCase;
 
 class FooTest extends TestCase
 {

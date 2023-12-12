@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Vendor\Tests\Unit;
+namespace Vendor\Tests;
 
 abstract class TestCase extends \Nulldark\DevTools\Tests\TestCase
 {
