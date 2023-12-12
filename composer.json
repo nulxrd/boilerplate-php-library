@@ -9,8 +9,7 @@
         }
     ],
     "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
-        "nulldark/devtools": "@dev"
+        "nulldark/devtools": "dev-master"
     },
     "minimum-stability": "dev",
     "autoload": {
@@ -25,9 +24,9 @@
     },
     "config": {
         "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true,
             "nulldark/devtools": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
     "scripts": {
@@ -47,6 +46,7 @@
         ],
         "lint:check": "phpcs",
         "lint:fix": "phpcbf --standard=phpcs.xml.dist",
+        "lint:syntax": "parallel-lint --colors src tests",
         "test:coverage:ci": "phpunit --colors=always --coverage-text --coverage-xml build/coverage/coverage-xml tests",
         "test:coverage:html": "phpunit --colors=always --coverage-html build/coverage/coverage-html tests",
         "test:unit": "phpunit --testsuite units"
