@@ -19,7 +19,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Vendor\\Tests\\": "tests"
+            "Vendor\\Tests\\Unit\\": "tests/unit/"
         }
     },
     "config": {
@@ -28,27 +28,5 @@
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
-    },
-    "scripts": {
-        "analyze:md": "phpmd src/ xml phpmd.xml",
-        "analyze:phpstan": "phpstan analyze --ansi --memory-limit=1G",
-        "analyze:psalm": "psalm",
-        "build:clean": "git clean -fX build/.",
-        "build:clean:cache": "git clone -fX build/cache/.",
-        "build:clean:coverage": "git clone -fX build/coverage/.",
-        "checks": [
-            "@lint:fix",
-            "@lint:check",
-            "@analyze:psalm",
-            "@analyze:phpstan",
-            "@test:unit",
-            "@test:coverage:html"
-        ],
-        "lint:check": "phpcs",
-        "lint:fix": "phpcbf --standard=phpcs.xml.dist",
-        "lint:syntax": "parallel-lint --colors src tests",
-        "test:coverage:ci": "phpunit --colors=always --coverage-text --coverage-xml build/coverage/coverage-xml tests",
-        "test:coverage:html": "phpunit --colors=always --coverage-html build/coverage/coverage-html tests",
-        "test:unit": "phpunit --testsuite units"
     }
 }
