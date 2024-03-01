@@ -9,7 +9,9 @@
         }
     ],
     "require-dev": {
-        "nulldark/devtools": "dev-master"
+        "charonlab/coding-standard": "1.2.x-dev",
+        "vimeo/psalm": "^6.x-dev",
+        "phpunit/phpunit": "^11.1-dev"
     },
     "minimum-stability": "dev",
     "autoload": {
@@ -24,9 +26,13 @@
     },
     "config": {
         "allow-plugins": {
-            "nulldark/devtools": true,
-            "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
+    },
+    "scripts": {
+        "lint-check": "phpcs",
+        "lint-fix": "phpcbf",
+        "static-analysis": "psalm --shepherd --stats",
+        "test": "phpunit --colors=always"
     }
 }
