@@ -1,11 +1,11 @@
-# nulldark/php-library-template
+# nuldark/boilerplate-php-library
 
-This project provides a GitHub repository template for a PHP package with GitHub Actions workflows.
+[![Latest Version](https://img.shields.io/github/release/nuldark/boilerplate-php-library.svg?style=flat-square)](https://github.com/nuldark/boilerplate-php-library/releases)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/nuldark/boilerplate-php-library.svg?style=flat-square)](https://scrutinizer-ci.com/g/nuldark/boilerplate-php-library)
+[![Quality Score](https://img.shields.io/scrutinizer/g/nuldark/boilerplate-php-library.svg?style=flat-square)](https://scrutinizer-ci.com/g/nuldark/boilerplate-php-library)
+[![Total Downloads](https://img.shields.io/packagist/dt/nuldark/boilerplate-php-library.svg?style=flat-square)](https://packagist.org/packages/nuldark/boilerplate-php-library)
 
-## Usage
-``` bash
-composer create-project nulldark/php-library-template YOUR-PROJECT-NAME-HERE
-```
+This project provides a GitHub repository template for a PHP package.
 
 ## Changelog
 
@@ -13,11 +13,11 @@ The maintainers of this project record notable changes to this project in a [cha
 
 ## Contributing
 
-The maintainers of this project suggest following the [contribution guide](CONTRIBUTING.md).
+The maintainers of this project suggest following the [contribution guide](.github/CONTRIBUTING.md).
 
 ## Code of Conduct
 
-The maintainers of this project ask contributors to follow the [code of conduct](CODE_OF_CONDUCT.md).
+The maintainers of this project ask contributors to follow the [code of conduct](.github/CODE_OF_CONDUCT.md).
 
 ## PHP Version Support Policy
 

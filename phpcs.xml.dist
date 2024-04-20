@@ -15,6 +15,6 @@
     <file>src</file>
     <file>tests</file>
 
-    <!-- Include all rules from the Charon Coding Standard -->
-    <rule ref="Charon"/>
+    <!-- Include all rules from the IonBytes Coding Standard -->
+    <rule ref="IonBytes"/>
 </ruleset>

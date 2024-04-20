@@ -1,5 +1,22 @@
-.idea/
-*.phar
-/build/
-/vendor/
+# ide
+/.idea/
+/.fleet/
+/.run/
+
+# composer
 composer.lock
+/composer.phar
+/auth.json
+/vendor
+
+# phpunit
+.phpunit.cache
+coverage/
+phpunit.xml
+
+# phpcs
+.phpcs.cache
+phpcs.xml
+
+# phpstan
+phpstan.neon
