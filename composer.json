@@ -1,11 +1,11 @@
 {
-    "name": "nuldark/boilerplate-php-library",
+    "name": "nulxrd/boilerplate-php-library",
     "description": "Boilerplate PHP library.",
     "license": "MIT",
     "type": "library",
     "support": {
-        "issues": "https://github.com/nuldark/boilerplate-php-library/issues",
-        "source": "https://github.com/nuldark/boilerplate-php-library"
+        "issues": "https://github.com/nulxrd/boilerplate-php-library/issues",
+        "source": "https://github.com/nulxrd/boilerplate-php-library"
     },
     "require": {
         "php": ">=8.2"

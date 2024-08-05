@@ -1,9 +1,9 @@
-# nuldark/boilerplate-php-library
+# nulxrd/boilerplate-php-library
 
-[![Latest Version](https://img.shields.io/github/release/nuldark/boilerplate-php-library.svg?style=flat-square)](https://github.com/nuldark/boilerplate-php-library/releases)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/nuldark/boilerplate-php-library.svg?style=flat-square)](https://scrutinizer-ci.com/g/nuldark/boilerplate-php-library)
-[![Quality Score](https://img.shields.io/scrutinizer/g/nuldark/boilerplate-php-library.svg?style=flat-square)](https://scrutinizer-ci.com/g/nuldark/boilerplate-php-library)
-[![Total Downloads](https://img.shields.io/packagist/dt/nuldark/boilerplate-php-library.svg?style=flat-square)](https://packagist.org/packages/nuldark/boilerplate-php-library)
+[![Latest Version](https://img.shields.io/github/release/nulxrd/boilerplate-php-library.svg?style=flat-square)](https://github.com/nulxrd/boilerplate-php-library/releases)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/nulxrd/boilerplate-php-library.svg?style=flat-square)](https://scrutinizer-ci.com/g/nulxrd/boilerplate-php-library)
+[![Quality Score](https://img.shields.io/scrutinizer/g/nulxrd/boilerplate-php-library.svg?style=flat-square)](https://scrutinizer-ci.com/g/nulxrd/boilerplate-php-library)
+[![Total Downloads](https://img.shields.io/packagist/dt/nulxrd/boilerplate-php-library.svg?style=flat-square)](https://packagist.org/packages/nulxrd/boilerplate-php-library)
 
 This project provides a GitHub repository template for a PHP package.
 
